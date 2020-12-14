@@ -15,6 +15,11 @@ namespace ServiceReservasi
         SqlConnection connection;
         SqlCommand com; //untuk mengkoneksikan database ke visual studio
 
+        public List<DataRegister> DataRegist()
+        {
+            throw new NotImplementedException();
+        }
+
         public string deletePemesanan(string IDPemesanan)
         {
             string a = "gagal";
@@ -33,6 +38,11 @@ namespace ServiceReservasi
                 Console.WriteLine(es);
             }
             return a;
+        }
+
+        public string DeleteRegister(string username)
+        {
+            throw new NotImplementedException();
         }
 
         public List<DetailLokasi> DetailLokasi()
@@ -87,6 +97,11 @@ namespace ServiceReservasi
                 Console.WriteLine(es);
             }
             return a;
+        }
+
+        public string Login(string username, string password)
+        {
+            throw new NotImplementedException();
         }
 
         public string pemesanan(string IDPemesanan, string NamaCustomer, string NoTelpon, int JumlahPemesanan, string IDLokasi)
@@ -147,7 +162,17 @@ namespace ServiceReservasi
             return pemesanans;
         }
 
+        public string Register(string username, string password, string kategori)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<CekLokasi> ReviewLokasi()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string UpdateRegister(string username, string password, string kategori, int id)
         {
             throw new NotImplementedException();
         }
